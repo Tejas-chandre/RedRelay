@@ -1,0 +1,30 @@
+[
+    {
+        "hospitalId": "H001",
+        "facilityName": "Nashik City Hospital",
+        "facilityType": "hospital",
+        "bloodGroup": "O+",
+        "units": 24
+    },
+    {
+        "hospitalId": "H001",
+        "facilityName": "Nashik City Hospital",
+        "facilityType": "hospital",
+        "bloodGroup": "A+",
+        "units": 12
+    },
+    {
+        "hospitalId": "B001",
+        "facilityName": "Nashik Blood Bank",
+        "facilityType": "bloodbank",
+        "bloodGroup": "O-",
+        "units": 18
+    },
+    {
+        "hospitalId": "B001",
+        "facilityName": "Nashik Blood Bank",
+        "facilityType": "bloodbank",
+        "bloodGroup": "B+",
+        "units": 30
+    }
+]

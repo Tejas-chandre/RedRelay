@@ -1,0 +1,101 @@
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Premium Dark Navy Palette */
+  --bg-deep: #080d1a;
+  --bg-main: #0c1426;
+  --bg-surface: #111c33;
+  --bg-surface-elevated: #162442;
+  --bg-surface-card: #13203c;
+  --bg-input: #0a1122;
+
+  /* Borders */
+  --border-subtle: #1c2b4c;
+  --border-mid: #253966;
+  --border-focus: #3b82f6;
+
+  /* Coral-Red Accents */
+  --coral-primary: #ff4760;
+  --coral-hover: #ff2e4b;
+  --coral-active: #e62240;
+  --coral-glow: rgba(255, 71, 96, 0.35);
+  --coral-subtle: rgba(255, 71, 96, 0.12);
+
+  /* Status Tokens */
+  --status-emerald: #10b981;
+  --status-emerald-bg: rgba(16, 185, 129, 0.14);
+  --status-emerald-border: #059669;
+
+  --status-amber: #f59e0b;
+  --status-amber-bg: rgba(245, 158, 11, 0.14);
+  --status-amber-border: #d97706;
+
+  --status-critical: #ff4760;
+  --status-critical-bg: rgba(255, 71, 96, 0.16);
+  --status-critical-border: #dc2626;
+
+  --tech-cyan: #06b6d4;
+  --tech-cyan-bg: rgba(6, 182, 212, 0.12);
+
+  /* Text Hierarchy */
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --text-highlight: #ffffff;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+  --shadow-coral: 0 0 24px rgba(255, 71, 96, 0.28);
+
+  color-scheme: dark;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}

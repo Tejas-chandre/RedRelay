@@ -1,0 +1,427 @@
+.area-inventory-section {
+    width: 100%;
+    margin: 30px 0;
+    color: #f1f5f9;
+}
+
+.area-inventory-heading,
+.area-facility-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.area-inventory-eyebrow {
+    color: #ff4965;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.area-inventory-heading h2 {
+    margin: 10px 0;
+    font-size: clamp(25px, 3vw, 34px);
+    color: #fff;
+}
+
+.area-inventory-heading p,
+.area-facility-heading p {
+    margin: 0;
+    color: #9db1cf;
+    line-height: 1.6;
+}
+
+.area-inventory-demo-badge,
+.area-demo-label {
+    color: #ffbd69;
+    background: rgba(255, 189, 105, 0.09);
+    border: 1px solid rgba(255, 189, 105, 0.25);
+    border-radius: 999px;
+    padding: 7px 11px;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.area-inventory-filters {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin: 24px 0;
+    padding: 18px;
+    background: #101a32;
+    border: 1px solid #263b61;
+    border-radius: 15px;
+}
+
+.area-inventory-filters label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+    color: #9db1cf;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.area-inventory-filters select,
+.area-inventory-filters input {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    min-height: 43px;
+    padding: 10px 12px;
+    color: #f1f5f9;
+    background: #0a1328;
+    border: 1px solid #2b4169;
+    border-radius: 9px;
+    outline: none;
+    font: inherit;
+}
+
+.area-inventory-filters select:focus,
+.area-inventory-filters input:focus {
+    border-color: #ff4965;
+    box-shadow: 0 0 0 3px rgba(255, 73, 101, 0.12);
+}
+
+.area-inventory-filters option {
+    color: #fff;
+    background: #101a32;
+}
+
+.area-inventory-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.area-summary-card {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 20px;
+    background: #111b33;
+    border: 1px solid #263b61;
+    border-radius: 14px;
+}
+
+.area-summary-card>span,
+.area-summary-card small {
+    color: #9db1cf;
+}
+
+.area-summary-card strong {
+    color: #fff;
+    font-size: 32px;
+    overflow-wrap: anywhere;
+}
+
+.area-inventory-subheading {
+    margin: 28px 0 15px;
+    color: #fff;
+    font-size: 21px;
+}
+
+.area-blood-group-grid {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 11px;
+}
+
+.area-blood-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    min-width: 0;
+    padding: 14px;
+    color: #fff;
+    text-align: left;
+    background: #111b33;
+    border: 1px solid #263b61;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.area-blood-card:hover {
+    border-color: #ff4965;
+    transform: translateY(-2px);
+}
+
+.area-blood-card.is-selected {
+    border-color: #ff4965;
+    background: rgba(255, 73, 101, 0.12);
+}
+
+.area-blood-symbol {
+    display: grid;
+    place-items: center;
+    width: 29px;
+    height: 29px;
+    color: #ff4965;
+    background: rgba(255, 73, 101, 0.12);
+    border-radius: 8px;
+    font-size: 21px;
+}
+
+.area-blood-name {
+    color: #a9bddb;
+    font-weight: 700;
+}
+
+.area-blood-card strong {
+    font-size: 26px;
+}
+
+.area-blood-card small {
+    color: #8198ba;
+}
+
+.area-facility-heading {
+    margin-top: 30px;
+}
+
+.area-facility-heading .area-inventory-subheading {
+    margin: 0 0 6px;
+}
+
+.area-result-count {
+    padding: 7px 11px;
+    color: #9db1cf;
+    background: #111b33;
+    border: 1px solid #263b61;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+.area-facility-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.area-facility-card {
+    min-width: 0;
+    padding: 19px;
+    background: #111b33;
+    border: 1px solid #263b61;
+    border-radius: 15px;
+}
+
+.area-facility-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.area-facility-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    color: #ff647b;
+    background: rgba(255, 73, 101, 0.12);
+    border: 1px solid rgba(255, 73, 101, 0.25);
+    border-radius: 11px;
+    font-weight: 800;
+}
+
+.area-facility-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.area-facility-details h4 {
+    margin: 1px 0 6px;
+    color: #fff;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+.area-facility-details p {
+    margin: 0 0 5px;
+    color: #a9bddb;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.area-facility-details>span {
+    color: #8198ba;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.area-facility-status {
+    padding: 5px 8px;
+    border-radius: 7px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.area-facility-status.healthy {
+    color: #34d399;
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.area-facility-status.warning {
+    color: #ffbd69;
+    background: rgba(255, 189, 105, 0.1);
+}
+
+.area-facility-status.critical {
+    color: #ff647b;
+    background: rgba(255, 73, 101, 0.12);
+}
+
+.area-facility-status.unknown {
+    color: #9db1cf;
+    background: rgba(157, 177, 207, 0.1);
+}
+
+.area-facility-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 19px 0 14px;
+}
+
+.area-facility-metrics>div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 11px;
+    background: #0a1328;
+    border: 1px solid #1d2e4d;
+    border-radius: 9px;
+}
+
+.area-facility-metrics span {
+    color: #8198ba;
+    font-size: 11px;
+}
+
+.area-facility-metrics strong {
+    color: #fff;
+    font-size: 16px;
+}
+
+.area-facility-stock {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.area-stock-cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 9px;
+    background: #0a1328;
+    border: 1px solid #1d2e4d;
+    border-radius: 8px;
+}
+
+.area-stock-cell span {
+    color: #9db1cf;
+    font-size: 11px;
+}
+
+.area-stock-cell strong {
+    color: #34d399;
+    font-size: 13px;
+}
+
+.area-stock-cell strong.no-stock {
+    color: #ff647b;
+}
+
+.area-facility-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 13px;
+    border-top: 1px solid #26344f;
+    color: #8198ba;
+    font-size: 11px;
+}
+
+.area-inventory-empty {
+    margin-top: 18px;
+    padding: 30px;
+    text-align: center;
+    background: #111b33;
+    border: 1px dashed #354a6e;
+    border-radius: 14px;
+}
+
+.area-inventory-empty h4 {
+    margin: 0 0 8px;
+    color: #fff;
+}
+
+.area-inventory-empty p {
+    color: #9db1cf;
+    line-height: 1.6;
+}
+
+.area-inventory-empty button {
+    padding: 10px 15px;
+    color: #fff;
+    background: #e92749;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.area-inventory-disclaimer {
+    margin-top: 20px;
+    color: #8198ba;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+    .area-inventory-filters {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .area-blood-group-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+
+    .area-inventory-filters,
+    .area-inventory-summary,
+    .area-facility-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .area-blood-group-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .area-facility-card {
+        padding: 14px;
+    }
+
+    .area-facility-stock {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .area-facility-status {
+        font-size: 9px;
+    }
+}
