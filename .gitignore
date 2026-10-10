@@ -2,7 +2,7 @@
 # Dependencies
 node_modules/
 
-# Environment variables and secrets
+# Environment secrets
 .env
 .env.*
 !.env.example
@@ -11,12 +11,11 @@ node_modules/
 dist/
 build/
 
-# Python cache
+# Python
+.venv/
+venv/
 __pycache__/
 *.pyc
 
 # Logs
 *.log
-
-# IDE files
-.vscode/
